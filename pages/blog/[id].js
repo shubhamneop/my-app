@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import posts from '../../postes.json';
 import { route } from 'next/dist/next-server/server/router';
+import Link from 'next/link';
 
 const Blog = props => {
 //   const router = useRouter()
@@ -13,6 +14,8 @@ const Blog = props => {
       <h1>Blog post</h1>
       <h2>{props.post.title}</h2>
        <p>{props.post.content}</p>
+
+       <Link href="/">Back</Link>
     </>
   )
 }
