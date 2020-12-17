@@ -7,7 +7,7 @@ const Blog = props => {
 //   const router = useRouter()
 
 //   const post = posts[router.query.id];
-//   if(!post) return <p></p>
+  if(!props.post) return <p></p>
 
   return (
     <>
